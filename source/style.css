@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.slide {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  height: ;
+}
+
+img {
+
+  display: inline-block;
+}
+
+.list-enter,
+.list-appear {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.list-enter.list-enter-active,
+.list-appear.list-appear-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.5s ease-out 0.5s;
+}
+
+.list-leave.list-leave-active {
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
