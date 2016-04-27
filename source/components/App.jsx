@@ -12,7 +12,7 @@ class App extends React.Component {
   }
   handleKeyPress(e) {
     let currentSlide = 0;
-    if (!(this.props.path.locationBeforeTransitions.pathname === '/')) {
+    if (!(this.props.path.locationBeforeTransitions.pathname === 'redux')) {
       currentSlide = Number(this.props.path.locationBeforeTransitions.pathname);
     }
     switch (e.key) {
